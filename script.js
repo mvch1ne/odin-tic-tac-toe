@@ -1,4 +1,8 @@
+/*=============== Top-Level Execution =============*/
+// runGame();
 
+
+/*=============== Core Asset Declaration ==========*/
 const gameBoard = (() => {
     const rows = 3; columns = 3;
     const board = [
@@ -19,7 +23,9 @@ const gameBoard = (() => {
 })();
 
 
-const runGame = () => {
+/*=============== Core Function Declaration ==========*/
+
+function runGame(){
     // Ask for details and create players
     createPlayers();
 
@@ -31,13 +37,10 @@ const runGame = () => {
 }
 
 
-/*=============== Top-Level Execution =============*/
-// runGame();
 
 
 
-
-/*================ Function Storage =================*/
+/*================ Auxilliary Function Storage =================*/
 function createPlayers(){
     // Ask for their names and create objects
     const playerX = Player(prompt('First player: '), 'X');
